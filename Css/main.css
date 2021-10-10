@@ -87,13 +87,13 @@ body {
   .homeBody {
     display: flex;
     flex-direction: column;
-    padding: 3% 2rem;
+    padding: 2% 2rem;
   }
   .container {
     width: 80vw;
   }
   .navbar {
-    padding: 3% 2rem;
+    padding: 2% 2rem;
   }
   .homeBody a {
     height: 35vh;
