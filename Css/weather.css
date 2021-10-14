@@ -1,0 +1,107 @@
+#mainbody {
+  background-image: url("https://images.unsplash.com/photo-1517964101322-a4cfaaf56e5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: contrast(115%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherpannel {
+  width: 70rem;
+  height: 40rem;
+  padding: 2%;
+  background: linear-gradient(
+    110.04deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.14) 100%
+  );
+  backdrop-filter: blur(7px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12px;
+}
+.weatherHeader {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.weatherHeader .UserName {
+  margin-left: auto;
+  color: rgb(240, 240, 240);
+}
+
+.weatherHeader .logo img {
+  height: 60px;
+  width: auto;
+}
+
+.weatherBody {
+  height: 90%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherBody .searchBar {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  width: 304px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.weatherBody .searchBar input {
+  width: 80%;
+  font-size: 16px;
+  padding: 10px;
+  background: transparent;
+}
+.weatherBody .searchBar input::placeholder {
+  color: rgb(235, 235, 235);
+}
+.weatherBody .City {
+  margin-top: auto;
+}
+.weatherBody .WeatherDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0px;
+}
+.weatherBody .City h1 {
+  font-size: 45px;
+}
+
+.weatherBody .WeatherDetail .weather {
+  display: flex;
+  align-items: center;
+}
+.weatherBody .WeatherDetail .weather h1 {
+  font-size: 110px;
+}
+
+.weatherBody .WeatherDetail .weatherDescription {
+  display: flex;
+  gap: 20px;
+}
+.weatherBody .WeatherDetail .weatherDescription > div {
+  display: flex;
+  align-items: center;
+}
+
+@media All and (max-width: 1024px) {
+  .weatherpannel {
+    height: 100vh;
+    width: 100vw;
+    padding: 4%;
+  }
+}
